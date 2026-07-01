@@ -12,6 +12,8 @@ export const site = {
     zipCity: "59192 Bergkamen",
     mapsHref:
       "https://www.google.com/maps/search/?api=1&query=Schachtstra%C3%9Fe+40%2C+59192+Bergkamen",
+    mapsEmbedSrc:
+      "https://www.google.com/maps?q=Schachtstra%C3%9Fe+40,+59192+Bergkamen&output=embed",
   },
   hours: [
     { day: "Montag – Samstag", time: "08:00 – 18:00" },

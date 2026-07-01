@@ -148,6 +148,19 @@ export default function KontaktPage() {
                 </span>
               </a>
             </Reveal>
+
+            <Reveal
+              delay={0.16}
+              className="mt-8 overflow-hidden rounded-3xl border border-ink/8 shadow-[0_10px_40px_rgba(20,15,10,0.06)]"
+            >
+              <iframe
+                src={site.address.mapsEmbedSrc}
+                title={`Standort von ${site.name} auf Google Maps`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-[360px] w-full grayscale-[15%] sm:h-[420px]"
+              />
+            </Reveal>
           </div>
         </div>
       </section>
