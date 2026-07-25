@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | USLU Estrich & Bodentechnik",
   },
   description:
-    "USLU Estrich & Bodentechnik in Bergkamen: Estricharbeiten, Fußbodenheizung, Haussanierung und persönliche Beratung. 20 Jahre Erfahrung, 500+ Projekte, 98% zufriedene Kunden.",
+    "USLU Estrich & Bodentechnik in Bergkamen: Estricharbeiten, Fußbodenheizung, Haussanierung und persönliche Beratung. 20 Jahre Erfahrung, 500+ Projekte, deutschlandweit im Einsatz.",
   keywords: [
     "Estrich Bergkamen",
     "Estrich Legen",
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     "Haussanierung",
     "Bodentechnik",
     "Estrichleger NRW",
+    "Estrich deutschlandweit",
     "Ümit Uslu",
   ],
   authors: [{ name: site.name }],
@@ -45,8 +46,8 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "USLU Estrich & Bodentechnik | Estrich, Sanierung & Fußbodenheizung",
     description:
-      "Fachgerechte Estricharbeiten, Fußbodenheizung und Haussanierung in Bergkamen. 20 Jahre Erfahrung – 500+ Projekte – 98% zufriedene Kunden.",
-    images: ["/images/hero-worker.jpeg"],
+      "Fachgerechte Estricharbeiten, Fußbodenheizung und Haussanierung aus Bergkamen – deutschlandweit im Einsatz. 20 Jahre Erfahrung, 500+ Projekte.",
+    images: ["/images/construction-site.jpeg"],
   },
   robots: {
     index: true,
@@ -71,7 +72,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "HomeAndConstructionBusiness",
               name: site.name,
-              image: "https://www.uslu-estrich.de/images/hero-worker.jpeg",
+              image: "https://www.uslu-estrich.de/images/construction-site.jpeg",
               telephone: site.phoneHref.replace("tel:", ""),
               email: site.email,
               address: {
@@ -97,7 +98,7 @@ export default function RootLayout({
                 },
               ],
               founder: site.owner,
-              areaServed: "Bergkamen und Umgebung",
+              areaServed: ["Bergkamen und Umgebung", "Deutschland"],
             }),
           }}
         />

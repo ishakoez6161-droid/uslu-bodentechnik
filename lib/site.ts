@@ -19,6 +19,40 @@ export const site = {
     { day: "Montag – Samstag", time: "08:00 – 18:00" },
     { day: "Sonntag", time: "geschlossen" },
   ],
+  serviceArea:
+    "Von Bergkamen aus übernehmen wir Estrich-, Fußbodenheizungs- und Sanierungsprojekte deutschlandweit – für Privathaushalte ebenso wie für Gewerbe- und Industrieobjekte.",
+  gallery: [
+    {
+      src: "/images/gallery/gewerbehalle-estrich.jpeg",
+      alt: "Großflächiger Estrich in einer Gewerbehalle mit Holzständerkonstruktion",
+      caption: "Gewerbehalle",
+      tag: "Gewerbe",
+    },
+    {
+      src: "/images/gallery/dachgeschoss-estrich.jpeg",
+      alt: "Frisch verlegter Estrich im ausgebauten Dachgeschoss mit Balkontür",
+      caption: "Dachgeschossausbau",
+      tag: "Wohnraum",
+    },
+    {
+      src: "/images/gallery/fussbodenheizung-spirale.jpeg",
+      alt: "Fußbodenheizung in Spiralverlegung vor der Terrassentür",
+      caption: "Fußbodenheizung",
+      tag: "Heiztechnik",
+    },
+    {
+      src: "/images/gallery/fussbodenheizung-terrasse.jpeg",
+      alt: "Verlegte Fußbodenheizungsrohre in mehreren Räumen mit Blick in den Garten",
+      caption: "Fußbodenheizung",
+      tag: "Heiztechnik",
+    },
+    {
+      src: "/images/gallery/flur-estrich.jpeg",
+      alt: "Fertiger Estrichboden in Flur und angrenzenden Räumen",
+      caption: "Flur & Zimmer",
+      tag: "Wohnraum",
+    },
+  ],
   stats: [
     { value: "500+", label: "Abgeschlossene Projekte" },
     { value: "98%", label: "Zufriedene Kunden" },

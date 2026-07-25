@@ -34,7 +34,7 @@ export default function Hero() {
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold-light/30 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-gold-light backdrop-blur"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-gold-light" />
-          Estrich &amp; Bodentechnik in Bergkamen
+          Estrich &amp; Bodentechnik aus Bergkamen – deutschlandweit im Einsatz
         </motion.span>
 
         <motion.h1
@@ -55,7 +55,9 @@ export default function Hero() {
           className="mt-7 max-w-lg text-lg leading-relaxed text-white/70"
         >
           Estricharbeiten, Fußbodenheizung und Haussanierung aus einer Hand –
-          präzise geplant, sauber umgesetzt und termintreu übergeben.
+          präzise geplant, sauber umgesetzt und termintreu übergeben. Auf
+          Wunsch übernehmen wir Ihr Projekt auch überregional in ganz
+          Deutschland.
         </motion.p>
 
         <motion.div

@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="max-w-sm text-sm leading-relaxed text-white/60">
               Estrich- und Bodentechnik, Fußbodenheizung und Haussanierung aus
               Bergkamen. Zuverlässigkeit, Qualität und persönliche Betreuung
-              seit 20 Jahren.
+              seit 20 Jahren – Projekte übernehmen wir deutschlandweit.
             </p>
             <div className="mt-6 flex gap-3">
               <Link

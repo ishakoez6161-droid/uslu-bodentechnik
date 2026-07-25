@@ -10,7 +10,7 @@ import ValueCard from "./value-card";
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lernen Sie USLU Estrich & Bodentechnik kennen: 20 Jahre Erfahrung, 500+ Projekte und ein Team, das Handwerk mit Herz betreibt. Inhaber Ümit Uslu aus Bergkamen.",
+    "Lernen Sie USLU Estrich & Bodentechnik kennen: 20 Jahre Erfahrung, 500+ Projekte und ein Team, das Handwerk mit Herz betreibt. Inhaber Ümit Uslu aus Bergkamen – im Einsatz deutschlandweit.",
 };
 
 const values = [
@@ -70,6 +70,12 @@ export default function UeberUnsPage() {
                 Was sich nie geändert hat: der persönliche Kontakt. Bei uns
                 sprechen Sie direkt mit den Menschen, die auch auf Ihrer
                 Baustelle arbeiten.
+              </p>
+              <p>
+                Unser Standort ist Bergkamen – unsere Reichweite reicht
+                inzwischen weit darüber hinaus: Für größere Projekte, von der
+                Eigentumswohnung bis zur Gewerbehalle, sind wir deutschlandweit
+                im Einsatz.
               </p>
             </div>
             <div className="mt-8">

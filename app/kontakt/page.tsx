@@ -8,7 +8,7 @@ import ContactInfoCard from "./contact-info-card";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie USLU Estrich & Bodentechnik in Bergkamen für Estricharbeiten, Fußbodenheizung, Haussanierung oder eine kostenlose Beratung. Telefon, WhatsApp und E-Mail.",
+    "Kontaktieren Sie USLU Estrich & Bodentechnik in Bergkamen für Estricharbeiten, Fußbodenheizung, Haussanierung oder eine kostenlose Beratung. Projekte übernehmen wir deutschlandweit. Telefon, WhatsApp und E-Mail.",
 };
 
 export default function KontaktPage() {
@@ -17,7 +17,7 @@ export default function KontaktPage() {
       <PageHero
         eyebrow="Kontakt"
         title="Lassen Sie uns über Ihr Projekt sprechen."
-        subtitle="Ob Estricharbeiten, Fußbodenheizung oder komplette Haussanierung – wir freuen uns auf Ihre Anfrage."
+        subtitle="Ob Estricharbeiten, Fußbodenheizung oder komplette Haussanierung – wir freuen uns auf Ihre Anfrage. Unser Büro sitzt in Bergkamen, unsere Projekte realisieren wir deutschlandweit."
         image="/images/consulting-couple.jpeg"
       />
 
@@ -106,6 +106,17 @@ export default function KontaktPage() {
                     <span>{h.time}</span>
                   </div>
                 ))}
+              </ContactInfoCard>
+
+              <ContactInfoCard
+                title="Einsatzgebiet"
+                icon={
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    <path d="M3 12h18M12 3c2.5 2.5 4 6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-6-4-9s1.5-6.5 4-9Z" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                }
+              >
+                {site.serviceArea}
               </ContactInfoCard>
             </RevealGroup>
           </div>
