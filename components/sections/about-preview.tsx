@@ -17,8 +17,8 @@ export default function AboutPreview() {
         <Reveal className="relative">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-[0_30px_70px_rgba(20,15,10,0.18)]">
             <Image
-              src="/images/consulting-couple.jpeg"
-              alt="Persönliche Beratung und gemeinsame Planung mit USLU Estrich & Bodentechnik"
+              src="/images/tools-helmet.jpeg"
+              alt="Werkzeug und Schutzhelm auf der Baustelle von USLU Estrich & Bodentechnik"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

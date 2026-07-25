@@ -18,7 +18,7 @@ export default function KontaktPage() {
         eyebrow="Kontakt"
         title="Lassen Sie uns über Ihr Projekt sprechen."
         subtitle="Ob Estricharbeiten, Fußbodenheizung oder komplette Haussanierung – wir freuen uns auf Ihre Anfrage. Unser Büro sitzt in Bergkamen, unsere Projekte realisieren wir deutschlandweit."
-        image="/images/consulting-couple.jpeg"
+        image="/images/gallery/gewerbehalle-estrich.jpeg"
       />
 
       <section className="relative bg-paper py-24">

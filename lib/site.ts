@@ -35,14 +35,8 @@ export const site = {
       tag: "Wohnraum",
     },
     {
-      src: "/images/gallery/fussbodenheizung-spirale.jpeg",
-      alt: "Fußbodenheizung in Spiralverlegung vor der Terrassentür",
-      caption: "Fußbodenheizung",
-      tag: "Heiztechnik",
-    },
-    {
-      src: "/images/gallery/fussbodenheizung-terrasse.jpeg",
-      alt: "Verlegte Fußbodenheizungsrohre in mehreren Räumen mit Blick in den Garten",
+      src: "/images/gallery/fussbodenheizung.jpeg",
+      alt: "Fachgerecht verlegte Fußbodenheizung mit Blick auf die Terrasse",
       caption: "Fußbodenheizung",
       tag: "Heiztechnik",
     },
