@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-2.5 border border-white/10 backdrop-blur-md transition-all duration-500 ${
-            scrolled || pathname === "/"
+            scrolled
               ? "bg-ink/85 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
               : "bg-ink/25"
           }`}
