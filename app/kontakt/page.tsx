@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/page-hero";
 import { RevealGroup, Reveal } from "@/components/motion-primitives";
 import { site } from "@/lib/site";
+import { LinkButton } from "@/components/button";
 import ContactForm from "./contact-form";
 import ContactInfoCard from "./contact-info-card";
 
@@ -171,6 +172,12 @@ export default function KontaktPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-[360px] w-full grayscale-[15%] sm:h-[420px]"
               />
+            </Reveal>
+
+            <Reveal delay={0.2} className="mt-6 flex justify-center sm:justify-end">
+              <LinkButton href={site.address.routeHref} target="_blank" variant="primary">
+                Route planen
+              </LinkButton>
             </Reveal>
           </div>
         </div>

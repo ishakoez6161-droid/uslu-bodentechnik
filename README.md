@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Google-Bewertungen einrichten
+
+Der Bereich „Das sagen unsere Kunden“ auf der Startseite lädt echte Bewertungen
+über die Google Places API (New). Ohne Konfiguration wird nur der Button
+„Alle Bewertungen ansehen“ angezeigt – es werden nie Platzhalter-Bewertungen gezeigt.
+
+1. In der [Google Cloud Console](https://console.cloud.google.com/) die **Places API (New)** aktivieren und einen API-Schlüssel erstellen (am besten auf die Places API beschränken).
+2. Die **Place ID** des Unternehmensprofils mit dem [Place ID Finder](https://developers.google.com/maps/documentation/places/web-service/place-id) ermitteln.
+3. Beim Hosting (z. B. Vercel) die Umgebungsvariablen aus `.env.example` setzen: `GOOGLE_PLACE_ID` und `GOOGLE_PLACES_API_KEY`.
+
+Die Daten werden serverseitig geladen und einmal täglich aktualisiert. Google liefert
+über die API die Gesamtbewertung, die Anzahl der Bewertungen und bis zu 5 Rezensionen.
