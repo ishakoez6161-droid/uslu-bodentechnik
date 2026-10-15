@@ -78,3 +78,7 @@ body {
     transparent 100%
   );
 }
+
+html[data-intro-seen] #intro-splash {
+  display: none;
+}

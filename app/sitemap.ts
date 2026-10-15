@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.uslu-estrich.de";
-  const routes = ["", "/ueber-uns", "/kontakt", "/datenschutz", "/impressum"];
+  const routes = ["", "/ueber-uns", "/galerie", "/kontakt", "/datenschutz", "/impressum"];
 
   return routes.map((route) => ({
     url: `${base}${route}`,

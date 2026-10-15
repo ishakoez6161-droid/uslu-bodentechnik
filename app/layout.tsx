@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import WhatsAppButton from "@/components/whatsapp-button";
+import IntroSplash from "@/components/intro-splash";
 import { site } from "@/lib/site";
 
 const fraunces = Fraunces({
@@ -61,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <body
         className={`${fraunces.variable} ${inter.variable} antialiased bg-paper text-ink`}
       >
@@ -102,6 +103,13 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(sessionStorage.getItem('uslu-intro-seen')==='1')document.documentElement.dataset.introSeen='1'}catch(e){}",
+          }}
+        />
+        <IntroSplash />
         <Navbar />
         <main>{children}</main>
         <Footer />

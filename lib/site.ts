@@ -23,10 +23,22 @@ export const site = {
     "Von Bergkamen aus übernehmen wir Estrich-, Fußbodenheizungs- und Sanierungsprojekte deutschlandweit – für Privathaushalte ebenso wie für Gewerbe- und Industrieobjekte.",
   gallery: [
     {
+      src: "/images/gallery/baustelle-estrichpumpe.jpeg",
+      alt: "Estrichpumpe und Sand auf einer USLU-Baustelle vor einem eingerüsteten Neubau",
+      caption: "Estrichpumpe im Einsatz",
+      tag: "Baustelle",
+    },
+    {
       src: "/images/gallery/gewerbehalle-estrich.jpeg",
       alt: "Großflächiger Estrich in einer Gewerbehalle mit Holzständerkonstruktion",
       caption: "Gewerbehalle",
       tag: "Gewerbe",
+    },
+    {
+      src: "/images/gallery/fussbodenheizung-tackersystem.jpeg",
+      alt: "Fußbodenheizung im Tackersystem in mehreren Räumen verlegt",
+      caption: "Fußbodenheizung im Tackersystem",
+      tag: "Heiztechnik",
     },
     {
       src: "/images/gallery/dachgeschoss-estrich.jpeg",
@@ -35,10 +47,70 @@ export const site = {
       tag: "Wohnraum",
     },
     {
+      src: "/images/gallery/fussbodenheizung-noppenplatte.jpeg",
+      alt: "Fußbodenheizung auf Noppenplatten mit Randdämmstreifen",
+      caption: "Fußbodenheizung auf Noppenplatte",
+      tag: "Heiztechnik",
+    },
+    {
+      src: "/images/gallery/nebengebaeude-estrich.jpeg",
+      alt: "Glatter Zementestrich in einem Nebengebäude mit Holzbalkendecke",
+      caption: "Nebengebäude",
+      tag: "Gewerbe",
+    },
+    {
+      src: "/images/gallery/fussbodenheizung-wohnzimmer.jpeg",
+      alt: "Fußbodenheizung im Wohnzimmer einer Altbausanierung mit Blick in den Garten",
+      caption: "Sanierung mit Fußbodenheizung",
+      tag: "Sanierung",
+    },
+    {
+      src: "/images/gallery/werkstatt-estrich.jpeg",
+      alt: "Estrichfläche in einer Werkstatt mit Sektionaltor",
+      caption: "Werkstatt & Halle",
+      tag: "Gewerbe",
+    },
+    {
       src: "/images/gallery/fussbodenheizung.jpeg",
       alt: "Fachgerecht verlegte Fußbodenheizung mit Blick auf die Terrasse",
       caption: "Fußbodenheizung",
       tag: "Heiztechnik",
+    },
+    {
+      src: "/images/gallery/neubau-estrich.jpeg",
+      alt: "Frisch eingebrachter Estrich in einem Neubau mit Trockenbauwänden",
+      caption: "Neubau",
+      tag: "Wohnraum",
+    },
+    {
+      src: "/images/gallery/keller-estrich.jpeg",
+      alt: "Neuer Estrich in einem Kellerraum mit Stützen und Versorgungsleitungen",
+      caption: "Kellersanierung",
+      tag: "Sanierung",
+    },
+    {
+      src: "/images/gallery/fussbodenheizung-flur.jpeg",
+      alt: "Fußbodenheizung im Flur mit gleichmäßigen Rohrabständen",
+      caption: "Fußbodenheizung im Flur",
+      tag: "Heiztechnik",
+    },
+    {
+      src: "/images/gallery/laubengang-estrich.jpeg",
+      alt: "Estrich auf einem Laubengang in einem Mehrfamilienhaus",
+      caption: "Mehrfamilienhaus",
+      tag: "Wohnbau",
+    },
+    {
+      src: "/images/gallery/flur-zementestrich.jpeg",
+      alt: "Fertiger Zementestrich in Flur und angrenzenden Räumen",
+      caption: "Flur & Wohnräume",
+      tag: "Wohnraum",
+    },
+    {
+      src: "/images/gallery/altbau-estrich.jpeg",
+      alt: "Estrich in einem sanierten Altbau mit Blick durch den Türdurchgang",
+      caption: "Altbausanierung",
+      tag: "Sanierung",
     },
     {
       src: "/images/gallery/flur-estrich.jpeg",
