@@ -150,7 +150,7 @@ export default function KontaktPage() {
                     Standort
                   </div>
                   <div className="mt-1 font-display text-lg">
-                    {site.address.street}, {site.address.zipCity}
+                    {site.name}
                   </div>
                 </div>
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 transition-transform group-hover:translate-x-1">

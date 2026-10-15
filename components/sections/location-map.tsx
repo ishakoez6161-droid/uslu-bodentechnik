@@ -10,7 +10,7 @@ export default function LocationMap() {
         <SectionHeading
           eyebrow="Standort"
           title="So finden Sie uns."
-          subtitle={`${site.address.street}, ${site.address.zipCity}`}
+          subtitle={site.name}
         />
 
         <Reveal className="mt-14 overflow-hidden rounded-3xl border border-ink/8 bg-white shadow-[0_10px_40px_rgba(20,15,10,0.06)]">
@@ -25,10 +25,10 @@ export default function LocationMap() {
           <div className="flex flex-col items-start justify-between gap-5 px-7 py-6 sm:flex-row sm:items-center">
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-gold-deep">
-                {site.name}
+                Standort
               </div>
               <div className="mt-1 font-display text-lg text-ink">
-                {site.address.street}, {site.address.zipCity}
+                {site.name}
               </div>
             </div>
             <LinkButton href={site.address.routeHref} target="_blank" variant="primary">
