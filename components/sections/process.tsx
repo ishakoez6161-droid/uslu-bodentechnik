@@ -33,7 +33,7 @@ export default function Process() {
     <section className="relative overflow-hidden bg-ink py-28">
       <div className="absolute inset-0">
         <Image
-          src="/images/tools-helmet.jpeg"
+          src="/images/neubau-uslu.jpeg"
           alt=""
           fill
           className="object-cover opacity-25"
