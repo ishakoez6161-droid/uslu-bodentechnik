@@ -25,6 +25,12 @@ export const site = {
     "Von Bergkamen aus übernehmen wir Estrich-, Fußbodenheizungs- und Sanierungsprojekte deutschlandweit – für Privathaushalte ebenso wie für Gewerbe- und Industrieobjekte.",
   gallery: [
     {
+      src: "/images/gallery/uslu-baustelle-altbau.jpeg",
+      alt: "USLU Estrichpumpe vor einem eingerüsteten Mehrfamilienhaus – USLU Estrich & Bodentechnik",
+      caption: "USLU im Einsatz",
+      tag: "Baustelle",
+    },
+    {
       src: "/images/gallery/baustelle-estrichpumpe.jpeg",
       alt: "Estrichpumpe und Sand auf einer USLU-Baustelle vor einem eingerüsteten Neubau",
       caption: "Estrichpumpe im Einsatz",
