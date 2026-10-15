@@ -15,11 +15,11 @@ export default function Hero() {
         className="absolute inset-0"
       >
         <Image
-          src="/images/construction-site.jpeg"
-          alt="Rohbau mit Estrichvorbereitung – USLU Estrich & Bodentechnik"
+          src="/images/intro-uslu.jpeg"
+          alt="USLU Estrichpumpe vor einer Baustelle – USLU Estrich & Bodentechnik"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[center_35%]"
           sizes="100vw"
         />
       </motion.div>
