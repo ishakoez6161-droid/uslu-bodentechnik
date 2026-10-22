@@ -53,6 +53,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    // Google Search Console (URL-Präfix-Property https://www.uslu-estrich.de/)
+    google: "yLaqwNBwEfijqSlpnip4d3XVr0imDxy0eKCLsCa6-xU",
+  },
 };
 
 export default function RootLayout({
