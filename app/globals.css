@@ -78,3 +78,69 @@ body {
     transparent 100%
   );
 }
+
+/* Blog-Artikel (Inhalte aus Soro) */
+.blog-content {
+  color: rgba(14, 13, 12, 0.78);
+  font-size: 1.075rem;
+  line-height: 1.8;
+}
+.blog-content > * + * { margin-top: 1.25em; }
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  font-family: var(--font-fraunces), serif;
+  color: var(--color-ink);
+  line-height: 1.25;
+  scroll-margin-top: 7rem;
+}
+.blog-content h2 { font-size: 1.85rem; margin-top: 2.2em; }
+.blog-content h3 { font-size: 1.4rem; margin-top: 1.8em; }
+.blog-content h4 { font-size: 1.15rem; margin-top: 1.5em; }
+.blog-content a {
+  color: var(--color-gold-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.blog-content a:hover { color: var(--color-ink); }
+.blog-content strong { color: var(--color-ink); font-weight: 600; }
+.blog-content ul,
+.blog-content ol { padding-left: 1.4em; }
+.blog-content ul { list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content li + li { margin-top: 0.45em; }
+.blog-content li::marker { color: var(--color-gold); }
+.blog-content blockquote {
+  border-left: 3px solid var(--color-gold);
+  background: var(--color-stone);
+  padding: 1em 1.4em;
+  border-radius: 0 1rem 1rem 0;
+  font-style: italic;
+}
+.blog-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  margin: 2em 0;
+}
+.blog-content figure figcaption {
+  margin-top: -1.2em;
+  font-size: 0.875rem;
+  color: rgba(14, 13, 12, 0.5);
+  text-align: center;
+}
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  display: block;
+  overflow-x: auto;
+}
+.blog-content th,
+.blog-content td {
+  border: 1px solid var(--color-stone-dark);
+  padding: 0.6em 0.9em;
+  text-align: left;
+}
+.blog-content th { background: var(--color-stone); color: var(--color-ink); }
+.blog-content hr { border-color: var(--color-stone-dark); margin: 2.5em 0; }
