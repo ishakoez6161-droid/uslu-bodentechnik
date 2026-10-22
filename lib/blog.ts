@@ -11,7 +11,7 @@ const FEED_URL =
   process.env.SORO_RSS_URL ||
   "https://app.trysoro.com/api/rss/0b8e357e-31d3-4831-9d57-ec97a4559666";
 
-export const REVALIDATE_SECONDS = 60 * 30; // 30 Minuten
+export const REVALIDATE_SECONDS = 60 * 5; // 5 Minuten
 
 export type BlogPost = {
   slug: string;
@@ -191,10 +191,12 @@ function normalizeItem(item: RssItem): BlogPost | null {
   };
 }
 
-export async function getAllPosts(): Promise<BlogPost[]> {
+export async function getAllPosts({ fresh = false }: { fresh?: boolean } = {}): Promise<BlogPost[]> {
   try {
     const res = await fetch(FEED_URL, {
-      next: { revalidate: REVALIDATE_SECONDS, tags: ["blog"] },
+      ...(fresh
+        ? { cache: "no-store" as const }
+        : { next: { revalidate: REVALIDATE_SECONDS, tags: ["blog"] } }),
       headers: { Accept: "application/rss+xml, application/xml, text/xml" },
     });
     if (!res.ok) return [];
@@ -219,8 +221,12 @@ export async function getAllPosts(): Promise<BlogPost[]> {
 }
 
 export async function getPost(slug: string): Promise<BlogPost | null> {
-  const posts = await getAllPosts();
-  return posts.find((p) => p.slug === slug) ?? null;
+  const cached = (await getAllPosts()).find((p) => p.slug === slug);
+  if (cached) return cached;
+  // Gerade erst in Soro veröffentlicht? Dann Feed einmal ungecacht nachladen,
+  // damit neue Artikel sofort unter ihrer URL erreichbar sind.
+  const fresh = await getAllPosts({ fresh: true });
+  return fresh.find((p) => p.slug === slug) ?? null;
 }
 
 export function formatDate(iso?: string): string {

@@ -7,7 +7,7 @@ import { LinkButton } from "@/components/button";
 import { formatDate, getAllPosts, getPost } from "@/lib/blog";
 import { site } from "@/lib/site";
 
-export const revalidate = 1800;
+export const revalidate = 300;
 // Neue Artikel, die nach dem Build in Soro veröffentlicht werden, on-demand rendern.
 export const dynamicParams = true;
 

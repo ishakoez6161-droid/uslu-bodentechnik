@@ -6,7 +6,7 @@ import { LinkButton } from "@/components/button";
 import { getAllPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
-export const revalidate = 1800;
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Ratgeber & Blog – Estrich, Fußbodenheizung & Sanierung",
