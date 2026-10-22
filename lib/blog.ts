@@ -13,6 +13,20 @@ const FEED_URL =
 
 export const REVALIDATE_SECONDS = 60 * 5; // 5 Minuten
 
+/**
+ * Vercel behält gefetchte Daten auch über neue Deployments hinweg. Damit ein
+ * Deployment nie einen alten (z. B. noch leeren) Feed übernimmt, enthält der
+ * Cache-Schlüssel die Deployment-ID. Soro ignoriert zusätzliche Parameter.
+ */
+const DEPLOY_KEY =
+  process.env.VERCEL_DEPLOYMENT_ID || process.env.VERCEL_GIT_COMMIT_SHA || "local";
+
+function feedUrl(params: Record<string, string>): string {
+  const url = new URL(FEED_URL);
+  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
+  return url.toString();
+}
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -193,10 +207,13 @@ function normalizeItem(item: RssItem): BlogPost | null {
 
 export async function getAllPosts({ fresh = false }: { fresh?: boolean } = {}): Promise<BlogPost[]> {
   try {
-    const res = await fetch(FEED_URL, {
-      ...(fresh
-        ? { cache: "no-store" as const }
-        : { next: { revalidate: REVALIDATE_SECONDS, tags: ["blog"] } }),
+    // "fresh": eigener Cache-Schlüssel pro Minute statt "no-store" – so bleiben
+    // die Seiten statisch/ISR-fähig und neue Artikel sind trotzdem sofort da.
+    const url = fresh
+      ? feedUrl({ v: DEPLOY_KEY, t: String(Math.floor(Date.now() / 60_000)) })
+      : feedUrl({ v: DEPLOY_KEY });
+    const res = await fetch(url, {
+      next: { revalidate: fresh ? 60 : REVALIDATE_SECONDS, tags: ["blog"] },
       headers: { Accept: "application/rss+xml, application/xml, text/xml" },
     });
     if (!res.ok) return [];
